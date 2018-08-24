@@ -1,0 +1,7 @@
+.DS_STORE
+bin
+build
+target
+gradle*
+.gradle
+*.war
