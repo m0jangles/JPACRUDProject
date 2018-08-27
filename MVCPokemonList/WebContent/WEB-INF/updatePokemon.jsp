@@ -47,7 +47,7 @@
 							
 					Set:
 					<br> 
-					<select class="custom-select" name="set">
+					<select class="custom-select" name="setName">
 
 						<option value="Base">Base</option>
 						<option value="Jungle">Jungle</option>

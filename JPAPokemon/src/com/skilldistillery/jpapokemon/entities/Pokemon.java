@@ -1,5 +1,6 @@
 package com.skilldistillery.jpapokemon.entities;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -22,7 +23,8 @@ public class Pokemon {
 	
 	private int stage;
 	
-	private String set;
+	@Column(name="set_name")
+	private String setName;
 	
 	private String pic;
 	
@@ -37,14 +39,14 @@ public class Pokemon {
 		
 	}
 
-	public Pokemon(int id, String name, String power, int hp, int stage, String set, String pic, String status, String notes) {
+	public Pokemon(int id, String name, String power, int hp, int stage, String setName, String pic, String status, String notes) {
 		super();
 		this.id = id;
 		this.name = name;
 		this.power = power;
 		this.hp = hp;
 		this.stage = stage;
-		this.set = set;
+		this.setName = setName;
 		this.pic = pic; 
 		this.status = status;
 //		this.quantity = quantity;
@@ -63,7 +65,7 @@ public class Pokemon {
 	@Override
 	public String toString() {
 		return "Pokemon [id=" + id + ", name=" + name + ", power=" + power + ", hp=" + hp + ", stage=" + stage
-				+ ", set=" + set + ", pic=" + pic + ", status=" + status + ", notes=" + notes + "]";
+				+ ", set=" + setName + ", pic=" + pic + ", status=" + status + ", notes=" + notes + "]";
 	}
 
 	public int getId() {
@@ -107,11 +109,11 @@ public class Pokemon {
 	}
 
 	public String getSet() {
-		return set;
+		return setName;
 	}
 
-	public void setSet(String set) {
-		this.set = set;
+	public void setSet(String setName) {
+		this.setName = setName;
 	}
 
 	public String getPic() {
