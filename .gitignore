@@ -6,3 +6,4 @@ gradle*
 .gradle
 *.war
 /.metadata/
+/.recommenders/

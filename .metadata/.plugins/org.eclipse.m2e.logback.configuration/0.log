@@ -1,1 +1,5 @@
 2018-08-24 14:01:51,511 [Worker-0: Loading available Gradle versions] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2018-08-25 15:00:27,616 [Worker-414: Debug Source Lookup] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/spring-tx/4.3.14.RELEASE/spring-tx-4.3.14.RELEASE-sources.jar
+2018-08-25 15:00:27,707 [Worker-414: Debug Source Lookup] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/spring-tx/4.3.14.RELEASE/spring-tx-4.3.14.RELEASE-sources.jar
+2018-08-25 15:02:17,161 [Worker-414: Debug Source Lookup] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/tomcat/tomcat-catalina/8.5.32/tomcat-catalina-8.5.32-sources.jar
+2018-08-25 15:02:17,510 [Worker-414: Debug Source Lookup] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/tomcat/tomcat-catalina/8.5.32/tomcat-catalina-8.5.32-sources.jar

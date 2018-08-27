@@ -11,12 +11,12 @@
 		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.3.xsd
 		http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-4.3.xsd">
 
-<context:component-scan base-package="com.skilldistillery.pokemon.entities, com.skilldistillery.pokemon.controller"></context:component-scan>
+<context:component-scan base-package="com.skilldistillery.mvcpokemonlist.data, com.skilldistillery.mvcpokemonlist.controller" />
 <mvc:annotation-driven />
 
 	<bean id="myEMF"
 		class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
-		<property name="persistenceUnitName" value="VideoStore" />
+		<property name="persistenceUnitName" value="pokemon" />
 	</bean>
 	<bean id="myTX"
 		class="org.springframework.orm.jpa.JpaTransactionManager">
@@ -24,7 +24,7 @@
 	</bean>
 	<tx:annotation-driven transaction-manager="myTX" />
 
-	<bean id="resolver"
+<bean id="resolver"
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 		<property name="prefix" value="WEB-INF/" />
 		<property name="suffix" value=".jsp" />
