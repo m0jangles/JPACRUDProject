@@ -1,6 +1,7 @@
 ## JPACRUDProject
 
-### About: This project is one of my first attemps at putting all of the pieces together for a simple front-end to back-end application.
+### About: 
+This project is one of my first attemps at putting all of the pieces together for a simple front-end to back-end application.
 I enjoyed this project very much and wanted it to be something that I would personally use for my Pokemon collection hobby.
 
 Collecting Pokemon cards is a bit of nostalgic hobby since collecting my first cards in middle-school and now revisiting with 
