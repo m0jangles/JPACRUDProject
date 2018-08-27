@@ -15,7 +15,7 @@
 </head>
 <body>
 	<c:if test="${success == true}">
-		<p>Film successfully deleted</p>
+		<p>Pokemon successfully deleted</p>
 	</c:if>
 	<c:if test="${succeeded != true}">
 		<p>Failed to delete Pokemon</p>

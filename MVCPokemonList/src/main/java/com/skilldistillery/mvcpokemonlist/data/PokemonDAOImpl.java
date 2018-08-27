@@ -80,10 +80,11 @@ public class PokemonDAOImpl implements PokemonDAO {
 	
 	public boolean destroy(Pokemon pokemon) {
 //		em.getTransaction().begin();
-		em.remove(pokemon);
+		Pokemon p = em.find(Pokemon.class, pokemon.getId());
+		em.remove(p);
 		
 //		em.getTransaction().commit();
-		if(em.find(Pokemon.class, pokemon.getId()) == null)
+		if(em.find(Pokemon.class, p.getId()) == null)
 			return true;
 			else
 		return false;
