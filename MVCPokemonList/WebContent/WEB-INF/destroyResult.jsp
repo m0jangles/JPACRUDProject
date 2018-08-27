@@ -17,11 +17,11 @@
 	<c:if test="${success == true}">
 		<p>Pokemon successfully deleted</p>
 	</c:if>
-	<c:if test="${succeeded != true}">
+	<c:if test="${success != true}">
 		<p>Failed to delete Pokemon</p>
 	</c:if>
 	
-	<a href="index.jsp">Return to Main Menu</a>
+	<a href="index.do">Return to Main Menu</a>
 
 </body>
 </html>
